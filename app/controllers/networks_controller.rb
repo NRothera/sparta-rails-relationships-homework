@@ -10,6 +10,7 @@ class NetworksController < ApplicationController
   # GET /networks/1
   # GET /networks/1.json
   def show
+    @user = @network.users
   end
 
   # GET /networks/new

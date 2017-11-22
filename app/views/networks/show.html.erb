@@ -10,5 +10,13 @@
   <%= @network.price %>
 </p>
 
+ <% @user.each do |user| %>
+ <table>
+   <tr>
+     <td><%= user.first_name %></td>
+   </tr>
+   <% end %>
+ </table>
+
 <%= link_to 'Edit', edit_network_path(@network) %> |
 <%= link_to 'Back', networks_path %>

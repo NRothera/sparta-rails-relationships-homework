@@ -28,7 +28,7 @@
 
   <div class="field">
     <%= form.label :network_id %>
-    <%= form.number_field :network_id, id: :user_network_id %>
+    <%= collection_select(:user, :network_id, @networks, :id, :brand) %>
   </div>
 
   <div class="actions">

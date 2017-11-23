@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Brand:</strong>
+  <%= @network.brand %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @network.price %>
+</p>
+
+ <% @user.each do |user| %>
+ <table>
+   <tr>
+     <td><%= user.first_name %></td>
+     <td><%= user.last_name %></td>
+   </tr>
+   <% end %>
+ </table>
+
+<%= link_to 'Edit', edit_network_path(@network) %> |
+<%= link_to 'Back', networks_path %>
